@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="container">
+    <div class="calculator">
+        <div class="calculator__left_panel">
+            <form id="formElem" method="post">
+                <div class="row">
+                    <label for="count">
+                        количество товара, шт.
+                    </label>
+                    <input name="count" id="count" type="number" required value="1" min="1">
+                </div>
+                <div class="row">
+                    <label for="price">цена за товар, USD</label>
+                    <input name="price" id="price" type="number" required value="1" min="1">
+                </div>
+                <div class="row">
+                    <label for="state_code">код шатата</label>
+                    <select name="state_code" id="state_code">
+                    </select>
+                </div>
+                <button type="submit">Посчитать</button>
+            </form>
+        </div>
+        <div class="calculator__right_panel">
+            <p>Стоимость товара без скидки: <span id="rawOrderCost"></span></p>
+            <p>Скидка: <span id="discount"></span></p>
+            <p>Стоимость товара со скидкой: <span id="orderWithDiscount"></span></p>
+            <p>Налог штата: <span id="taxes"></span></p>
+            <p>Конечная стоимость товара: <span id="finalOrderCost"></span></p>
+        </div>
+    </div>
+
+
+</div>
+
+<script src="script/main.js"></script>
+
+</body>
+</html>

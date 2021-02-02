@@ -1,0 +1,11 @@
+.idea
+.coverage
+.venv
+__pycache__
+.flake8
+.mypy_cache
+*egg-info*
+*.pyc
+coverage_html
+media
+var
